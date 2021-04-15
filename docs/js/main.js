@@ -9,5 +9,21 @@ $(function(){
   transitionEffect: "fade",
   transitionDuration: 0,
 
+
+
 });
+
+// ------start sticky header------
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+$('.chart-header').addClass("sticky");
+}
+else{
+$('.chart-header').removeClass("sticky");
+}
+});
+
+//-------end sticky header--------
+ 
 });

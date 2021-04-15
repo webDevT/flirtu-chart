@@ -17,7 +17,7 @@ body
 	padding-top: 10px
 	padding-bottom: 10px 
 	box-shadow: 0px 2px 2px rgba(#000, 0.1)
-	position: fixed 
+	//position: fixed 
 	top: 0 
 	left: 0 
 	width: 100%
@@ -26,6 +26,27 @@ body
 	background: #fff
 	box-sizing: border-box
 	background: #517da2
+	transition: all 0.3s
+.chart-header.sticky
+	position: fixed
+	padding-top: 5px
+	padding-bottom: 5px
+
+	.user-photo
+		width: 50px
+		height: 50px 
+		min-width: 50px
+		border-radius: 50%
+		transition: all 0.5s
+		img 
+			min-width: 100%
+			height: auto
+			//transition: all 0.3s
+	.chart__start-date,
+	.chart__user-state,
+	.chart__user-age 
+		display: none
+	
 .user-photo
 	width: 80px
 	height: 100px 
@@ -61,7 +82,6 @@ body
 	color: #fff
 .chart__user-age
 	font-size: 22px
-	margin-left: 5px
 	font-weight: 600
 	color: #fff
 .chart-footer
@@ -72,7 +92,7 @@ body
 	padding-bottom: 10px
 	padding-top: 10px
 	z-index: 999
-	box-shadow: inset 0px 2px 2px rgba(#000, 0.1)
+	box-shadow: 0px -2px 2px rgba(#000, 0.1)
 	.chart-container 
 		display: flex 
 		align-items: center 
@@ -110,8 +130,8 @@ body
 	color: #fff
 	font-size: 14px
 .chart__content
-	height: 100vh 
-	padding-top: 130px
+	//height: 100vh 
+	//padding-top: 130px
 	padding-bottom: 100px
 	box-sizing: border-box
 	overflow-y: auto
@@ -126,6 +146,7 @@ body
 	padding: 10px 15px
 	border-radius: 20px
 	border-bottom-right-radius: 4px
+	padding-bottom: 5px
 .message-date
 	color: rgba(#636363, 0.8)
 	padding: 5px 0
@@ -137,6 +158,7 @@ body
 	padding: 10px 15px
 	border-radius: 20px
 	border-bottom-left-radius: 4px
+	padding-bottom: 5px
 .chart-row
 	display: flex 
 	flex-direction: column
@@ -147,9 +169,11 @@ body
 	color: rgba(#636363, 0.8)
 .msg-status--right
 	text-align: right
+	padding-top: 4px
 .msg-status--left
 	display: flex 
 	align-items: center
+	padding-top: 4px
 	img 
 		width: 10px
 		margin-right: 2px
@@ -169,6 +193,15 @@ body
 .text-left,
 .text-right
 	margin-bottom: 4px
+.msg-status
+	color: #5ea65a
+.tick
+	height: 10px
+.text-left
+	.msg-status
+		color: rgba(#636363, 0.8)
+.msg-status--left
+	color: rgba(#636363, 0.8)
 @import "media"
 
 
