@@ -5,5 +5,9 @@ $(function(){
   transitionDuration: 0,
 
 });
+ $('[data-fancybox="gallery2"]').fancybox({
+  transitionEffect: "fade",
+  transitionDuration: 0,
 
+});
 });
