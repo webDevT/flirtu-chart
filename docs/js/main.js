@@ -26,4 +26,12 @@ $('.chart-header').removeClass("sticky");
 
 //-------end sticky header--------
  
+$('.matches__slider').slick({
+prevArrow: false,
+nextArrow: false,
+slidesToShow: 5,
+
+});
+
+
 });
