@@ -31,13 +31,14 @@ body
 	position: fixed
 	padding-top: 5px
 	padding-bottom: 5px
+	transition: all 0.3s
 
 	.user-photo
 		width: 50px
 		height: 50px 
 		min-width: 50px
 		border-radius: 50%
-		transition: all 0.5s
+		transition: all 0.3s
 		position: relative
 
 		img 
@@ -58,6 +59,7 @@ body
 	align-items: center	
 	margin-right: 15px
 	position: relative
+	transition: all 0.3s
 	.msg-status 
 		position: absolute
 		bottom: 5px 
@@ -100,6 +102,8 @@ body
 	padding-bottom: 10px
 	padding-top: 10px
 	z-index: 999
+	background: #fff
+	border-top: 1px solid rgba(#000, 0.2)
 	.chart-container 
 		display: flex 
 		align-items: center 
@@ -310,7 +314,70 @@ body
 .back-arrow
 	height: 15px
 	margin-right: 10px
+.messages-title
+	margin-top: 25px
+	position: relative
+	display: inline-block
+	display: flex
+	padding-bottom: 10px
+	margin-bottom: 0
+.message-title__wrapper
+	box-shadow: 0px 2px 2px rgba(#000, 0.1)
+
+.messages-title__label
+	background: #ff86f0
+	padding: 2px
+	min-width: 17.6px 
+	min-height: 17.6px
+	border-radius: 50%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	font-size: 12px
+	color: #fff
+	margin-left: 3px
+.messages__item
+	display: flex
+	align-items: center
+	text-decoration: none
+	color: #000
+	margin-bottom: 20px
+	.matches__item-wrapper.matches__item-wrapper--like
+		border: none
+.messages__item-content 
+	margin-left: 20px
+.chart__user-state--online 	 
+	.chart__user-state
+		display: block
+.messages__item__user-state 
+	width: 10px 
+	height: 10px 
+	background: #52b741
+	display: block
+	border-radius: 50px
+	margin-left: 5px
+.messages__item-user-info
+	display: flex
+	align-items: center
+	margin-bottom: 5px
+.messages__item__text
+	color: rgba(#000, 0.7)
+.messages-header 
+	position: fixed 
+	top: 0 
+	left: 0 
+	width: 100%
+	background: #fff 
+	z-index: 9999
+.messages__list		
+	padding-top: 248px
+	padding-bottom: 30px
+.chart-header--message 
+	padding-top: 10px 
+	padding-bottom: 10px
+	background: #517da2
 @import "media"
+
 
 
 
