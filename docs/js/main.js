@@ -30,6 +30,8 @@ $('.matches__slider').slick({
 prevArrow: false,
 nextArrow: false,
 slidesToShow: 5,
+slidesToScroll: 5,
+infinite: true
 
 });
 

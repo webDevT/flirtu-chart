@@ -184,7 +184,7 @@ body
 	background: #ebffd5
 	max-width: 80%
 	padding: 10px 15px
-	border-radius: 20px
+	border-radius: 10px
 	border-bottom-right-radius: 4px
 	padding-bottom: 5px
 .message-date
@@ -196,7 +196,7 @@ body
 	background: #ffffff
 	max-width: 80%
 	padding: 10px 15px
-	border-radius: 20px
+	border-radius: 10px
 	border-bottom-left-radius: 4px
 	padding-bottom: 5px
 .chart-row
@@ -233,6 +233,7 @@ body
 .text-left,
 .text-right
 	margin-bottom: 4px
+	box-shadow: 0px 0px 2px rgba(#000, 0.3)
 .msg-status
 	color: #5ea65a
 .tick
@@ -256,6 +257,10 @@ body
 	font-size: 18px
 	font-weight: 700
 	margin-bottom: 10px
+.matches__item
+	text-decoration: none
+	color: #000
+	outline: none
 .mathes__item-photo
 	width: 50px
 	height: 50px
@@ -370,12 +375,28 @@ body
 	background: #fff 
 	z-index: 9999
 .messages__list		
-	padding-top: 248px
+	padding-top: 210px
 	padding-bottom: 30px
 .chart-header--message 
 	padding-top: 10px 
 	padding-bottom: 10px
 	background: #517da2
+.text-left--photo .user-photo
+	border: 2px solid #ebffd5
+	box-shadow: 0px 0px 2px rgba(#000, 0.3)
+.text-left.text-left--photo
+	box-shadow: none
+.text-right--photo .user-photo
+	border: 2px solid #ebffd5
+	box-shadow: 0px 0px 2px rgba(#000, 0.3)
+.text-right.text-right--photo
+	box-shadow: none
+.user-photo
+	.msg-status
+		background: rgba(#000, 0.6)
+		color: #fff
+		padding: 2px 5px 
+		border-radius: 10px
 @import "media"
 
 
