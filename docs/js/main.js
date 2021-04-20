@@ -31,7 +31,8 @@ prevArrow: false,
 nextArrow: false,
 slidesToShow: 5,
 slidesToScroll: 5,
-infinite: true
+infinite: false,
+touchMove: false
 
 });
 
