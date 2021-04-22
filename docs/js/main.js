@@ -26,15 +26,15 @@ $('.chart-header').removeClass("sticky");
 
 //-------end sticky header--------
  
-$('.matches__slider').slick({
-prevArrow: false,
-nextArrow: false,
-slidesToShow: 5,
-slidesToScroll: 5,
-infinite: false,
-touchMove: false
+// $('.matches__slider').slick({
+// prevArrow: false,
+// nextArrow: false,
+// slidesToShow: 5,
+// slidesToScroll: 5,
+// infinite: false,
+// touchMove: false
 
-});
+// });
 
 
 });
