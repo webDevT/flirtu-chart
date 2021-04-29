@@ -26,6 +26,9 @@ $('.chart-header').removeClass("sticky");
 
 //-------end sticky header--------
  
+$('.close-chart').click(function() {
+	$('.chart-body').fadeOut();
+})
 // $('.matches__slider').slick({
 // prevArrow: false,
 // nextArrow: false,

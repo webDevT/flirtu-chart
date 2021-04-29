@@ -4,6 +4,7 @@
 body
 	margin: 0
 
+
 .chart-body
 	font-family: "Arial", sans-serif
 	font-size: 16px
@@ -108,7 +109,6 @@ body
 	z-index: 999
 	background: #fff
 	border-top: 1px solid rgba(#000, 0.2)
-	//height: 41px
 	.chart-container 
 		display: flex 
 		align-items: center 
@@ -172,15 +172,20 @@ body
 	display: flex 
 	align-items: center
 	font-family: Arial, sans-serif
-	padding-top: 10px
+	padding-top: 10.5px
 	box-sizing: border-box
-	position: absolute
-	bottom: 10px
-	left: 50%
-	transform: translateX(-50%)
+	max-height: 140px 
+	overflow-y: auto
+
+.text-input::-webkit-scrollbar
+	width: 4px
+	height: 4px
+	background-color: #FFFFFF
+ .text-input::-webkit-scrollbar-thumb
+ 	border-radius: 2px
+ 	background-color: #d1d1d1
 .chart-footer
 	display: flex
-	height: 41px
 	align-items: flex-end
 
 .chart__start-date
@@ -287,8 +292,8 @@ body
 	color: #000
 	outline: none
 .mathes__item-photo
-	width: 50px
-	height: 50px
+	width: 65px
+	height: 65px
 	border-radius: 50%
 	overflow: hidden
 	img 
@@ -296,8 +301,8 @@ body
 		width: 100%
 		min-height: 100% 
 .matches__item-wrapper
-	width: 53px 
-	height: 53px 
+	width: 68px 
+	height: 68px 
 	border-radius: 50%
 	display: flex 
 	justify-content: center 
@@ -462,6 +467,7 @@ body
 	display: flex
 	overflow-x: auto
 	padding-bottom: 0
+	//width: 300px
 	.matches__item 
 		width: 20%
 		min-width: 20%
@@ -472,7 +478,16 @@ body
 /* ie 10+ */
 .matches__slider
 	-ms-overflow-style: none
-
+.unread-mesages
+	color: #fff
+	width: 20px 
+	height: 20px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	font-size: 12px
+	top: -2px
+	right: -5px
 @import "media"
 
 
