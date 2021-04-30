@@ -26,9 +26,14 @@ $('.chart-header').removeClass("sticky");
 
 //-------end sticky header--------
  
-$('.close-chart').click(function() {
-	$('.chart-body').fadeOut();
-})
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+$('.chart-anonim').addClass("sticky");
+}
+else{
+$('.chart-anonim').removeClass("sticky");
+}
+});
 // $('.matches__slider').slick({
 // prevArrow: false,
 // nextArrow: false,

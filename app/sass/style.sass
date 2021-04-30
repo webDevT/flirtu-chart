@@ -199,7 +199,7 @@ body
 	box-sizing: border-box
 	overflow-y: auto
 	background: #c5d0d7
-	padding-top: 5px
+	padding-top: 37px
 	.chart-container 
 		display: flex 
 		flex-direction: column
@@ -436,9 +436,6 @@ body
 	align-items: flex-end
 	overflow: hidden
 	padding-bottom: 265px
-	// .chart-container 
-	// 	position: absolute
-	// 	bottom: 100px
 .empty-chat__title 
 	font-size: 24px
 	margin-bottom: 10px	
@@ -449,7 +446,7 @@ body
 .empty-content
 	width: 100%
 	left: 50%
-	bottom: 100px
+	bottom: 50%
 	position: fixed
 	transform: translateX(-50%)
 //end empty chart style
@@ -488,6 +485,63 @@ body
 	font-size: 12px
 	top: -2px
 	right: -5px
+
+//start chart anonim 
+.chart-anonim 
+	background: #26252b
+	color: #fff
+	position: fixed 
+	top: 125px
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 999
+	white-space: nowrap
+	padding: 5px 20px
+	border-radius: 6px
+	transition: all 0.3s
+.chart-anonim.sticky
+	top: 65px
+//end chart anonim 
+
+.empty-chart__anonimys 
+	position: absolute 
+	top: 0 
+	left: 40px
+	transform: translateY(-100%)
+	padding-bottom: 10px
+	width: calc(100% - 100px)
+	.chart-row 
+		padding-left: 15px
+		padding-right: 15px
+		margin-top: 40px
+		.text-left 
+			border-bottom-left-radius: 10px
+			color: #517da2
+			background-image: url('../img/hide.svg')
+			background-repeat: no-repeat 
+			background-position: right 0 bottom -8px
+			margin-bottom: 0
+			max-width: 310px 
+			width: 100%
+			box-sizing: border-box
+			position: relative
+			
+		.text-left:before
+			content: ''
+			border: 10px solid transparent
+			border-top: 10px solid #fff
+			position: absolute
+			bottom: 2px
+			left: 20px
+			transform: translateY(100%)
+			z-index: 9
+		.anonimus__title
+			font-size: 20px 
+			font-weight: 700
+		p 
+			margin-top: 5px 
+			margin-bottom: 8px
+
 @import "media"
 
 
